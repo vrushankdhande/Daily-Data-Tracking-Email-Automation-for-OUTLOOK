@@ -8,50 +8,46 @@ It is designed to monitor data availability, track unique records, and provide d
 
 ## 🚀 Features
 
-✅ Reads multiple CSV and Excel report files
-✅ Tracks unique items and total rows per platform
-✅ Generates a consolidated summary report
-✅ Converts summary to HTML table
-✅ Automatically sends email via Outlook
-✅ Handles missing files gracefully
-✅ Dynamic date-based file handling
+- ✅ Reads multiple CSV and Excel report files
+- ✅ Tracks unique items and total rows per platform
+- ✅ Generates a consolidated summary report
+- ✅ Converts summary to HTML table
+- ✅ Automatically sends email via Outlook
+- ✅ Handles missing files gracefully
+- ✅ Dynamic date-based file handling
 
 ## 🛠️ Tech Stack
-Python
-Pandas
-Win32com (Outlook Automation)
-Datetime
+- Python
+- Pandas
+- Win32com (Outlook Automation)
+- Datetime
 
 ## 📁 Project Structure
- 📦 data-tracking-automation
-  ┣ 📜 main_script.py
-  ┣ 📜 README.md
-  ┗ 📂 report_files
+ - 📦 data-tracking-automation
+ -  ┣ 📜 main_script.py
+ -  ┣ 📜 README.md
+ - ┗ 📂 report_files
   
 ## ⚙️ How It Works
-1️⃣ The script calculates yesterday’s date dynamically
-2️⃣ Reads report files from predefined paths
-3️⃣ Extracts:
+- 1️⃣ The script calculates yesterday’s date dynamically
+- 2️⃣ Reads report files from predefined paths
+- 3️⃣ Extracts: Number of unique records and Total rows
+- 4️⃣ Combines results into a summary DataFrame
+- 5️⃣ Converts summary into HTML format
+- 6️⃣ Sends automated email notification with report
 
-## Number of unique records
-
-## Total rows
-4️⃣ Combines results into a summary DataFrame
-5️⃣ Converts summary into HTML format
-6️⃣ Sends automated email notification with report
-
-##📧 Email Output
-The email includes:
-Report date
-Platform-wise summary table
-Unique item counts
-Total row counts
+## 📧 Email Output
+- The email includes:
+- Report date
+- Platform-wise summary table
+- Unique item counts
+- Total row counts
 
 ## ▶️ How to Run
 
 #### 1️⃣ Clone the repository
-git clone https://github.com/your-username/data-tracking-automation.git
-cd data-tracking-automation
+- git clone https://github.com/your-username/data-tracking-automation.git
+- cd data-tracking-automation
 
 #### 2️⃣ Install dependencies
 pip install pandas pywin32
@@ -61,44 +57,27 @@ python main_script.py
 
 #### 🔧 Configuration
 
-Update file paths inside the script:
-
-file_paths = {
-    'Platform_Name': 'your/local/path'
-}
+- Update file paths inside the script:
+- file_paths = {'Platform_Name': 'your/local/path'}
 
 Update email recipients:
-mail.To = 'your_email@example.com'
-mail.CC = 'cc_emails@example.com'
+- mail.To = 'your_email@example.com'
+- mail.CC = 'cc_emails@example.com'
 
 ## ⚠️ Requirements
-Windows OS (required for Outlook automation)
-Microsoft Outlook installed and configured
-Python 3.8+
+- Windows OS (required for Outlook automation)
+- Microsoft Outlook installed and configured
+- Python 3.8+
 
 ## 📈 Use Case
 This tool is useful for:
-✔ Data monitoring
-✔ Daily ETL validation
-✔ Reporting automation
-✔ Data pipeline health checks
-✔ Operations reporting
+- ✔ Data monitoring
+- ✔ Daily ETL validation
+- ✔ Reporting automation
+- ✔ Data pipeline health checks
+- ✔ Operations reporting
 
-🧠 Future Improvements
+## 👤 Author
 
-Add logging system
-
-Config file (YAML/JSON)
-
-Docker support
-
-Scheduler integration (Airflow / Cron)
-
-Dashboard integration
-
-Cloud storage support
-
-👤 Author
-
-Vrushank Dhande
-Data Science Professional
+# Vrushank Dhande
+# Data Science Professional
