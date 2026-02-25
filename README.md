@@ -53,7 +53,7 @@ It is designed to monitor data availability, track unique records, and provide d
 pip install pandas pywin32
 
 #### 3️⃣ Run the script
-python main_script.py
+python update_mailer_files.py
 
 #### 🔧 Configuration
 
