@@ -78,6 +78,5 @@ This tool is useful for:
 - ✔ Operations reporting
 
 ## 👤 Author
-
-# Vrushank Dhande
-# Data Science Professional
+- Vrushank Dhande
+- Data Science Professional
